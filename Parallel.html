@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Verdana, sans-serif;
+  /* background-color: rgb(248, 248, 248); */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: rgba(254, 238, 241, 255);
+  background-image: url("https://images.shiksha.com/mediadata/images/1544420972php7JBghm.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.header {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  background-color: white;
+  
+  /* border: 1px solid red; */
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  /* -webkit-box-shadow: 0 8px 6px -6px #eee;
+              -moz-box-shadow: 0 8px 6px -6px #eee; */
+  box-shadow: 0 8px 6px -6px #eee;
+
+  /* box-shadow: 0px 8px 8px -6px rgba(0, 0, 0, 0.5); */
+}
+.header div ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+.categories {
+  margin-left: 50px;
+  /* display: block; */
+  float: left;
+  width: 37%;
+  /* border: 1px solid red; */
+  /* position: absolute; */
+}
+.header div img {
+  width: 51px;
+  margin-left: 60px;
+}
+.header div ul li a {
+  /* margin-right: 20px; */
+  padding: 28px 17px 28px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  color: #282c3f;
+  /* border-bottom: none; */
+  -webkit-transition: left 0.2s ease-out, width 0.2s ease-out;
+  transition: left 0.2s ease-out, width 0.2s ease-out;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+img {
+  display: block;
+}
+.search-div {
+  display: flex;
+  width: 35%;
+  background-color: #eee;
+  height: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 7%;
+  border-radius: 3px;
+}
+
+#searchpng {
+  /* height: 10px; */
+  /* vertical-align: middle; */
+  width: 15px;
+  /* border: 1px solid red; */
+  margin: 15px;
+  opacity: 0.5;
+}
+.search-div input {
+  width: 70%;
+  border: none;
+  margin-left: 2%;
+  background-color: #eee;
+}
+.nav-last {
+  padding: 0 12px 0 17px;
+  position: relative;
+  display: flex;
+  height: 40px;
+  margin-left: 30px;
+  /* border: 1px solid red; */
+}
+.nav-last > div {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  align-items: center;
+  padding-top: 5px;
+  margin-left: 15px;
+}
+#svg {
+  height: 15px;
+  /* border: 1px solid red; */
+  margin-left: 0px;
+}
+.logo{
+height:40px;
+
+}
+* { 
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box; 
+	font-family: 'Poppins', sans-serif; 
+} 
+
+.container { 
+    position: absolute;
+    TOP: 100px;
+	width: 100%; 
+	min-height: 100vh; 
+	background: #fffaee; 
+} 
+
+.container h2 { 
+	color: #1d2d3f; 
+	font-size: 32px; 
+	padding: 15px 0 20px 0; 
+	text-align: left; 
+	margin-left: 10%; 
+} 
+
+.container h3 { 
+	margin: 0% 0 2% 10%; 
+	font-size: 24px; 
+	color: #0C356A; 
+} 
+
+.price-row { 
+	width: 81%; 
+	margin: auto; 
+	display: grid; 
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+	grid-gap: 30px; 
+    position: absolute;
+ top:200px;
+ left:120px;
+} 
+
+.price-col { 
+	transition: box-shadow .5s; 
+	transition: transform; 
+	background: #61677A; 
+	padding: 10% 10%; 
+	border-radius: 10px; 
+	color: #D8D9DA; 
+	text-align: center; 
+} 
+
+hr { 
+	padding: -10% !important; 
+} 
+
+.price-col:hover { 
+	box-shadow: 0 0 20px rgba(9, 157, 194, 0.2); 
+	transform: scale(1.04); 
+} 
+
+.price-col p { 
+	font-size: 22px; 
+} 
+
+.price-col h3 { 
+	color: whitesmoke; 
+	font-size: 44px; 
+	margin: 15px 0 20px; 
+	font-weight: 500; 
+} 
+
+.price-col h3 span { 
+	font-size: 25px; 
+} 
+
+.price-col ul { 
+	text-align: left; 
+	margin: 10px 0; 
+	color: #0C356A; 
+	list-style: none; 
+} 
+
+.price-col ul li { 
+	border-bottom: 2px solid #feffff; 
+	font-size: 20px; 
+	color: #ffffff; 
+	padding: 8px; 
+	text-align: left; 
+} 
+
+.price-col button { 
+	background-color: #EEE0C9; 
+	border: 1px solid white; 
+	border-radius: 5px; 
+	margin: 20px 0 0 0; 
+	color: #001c38; 
+	padding: 10px 25px; 
+	text-align: center; 
+	text-decoration: none; 
+	font-size: 18px; 
+} 
+
+.price-col button:hover { 
+	background: #091c23; 
+	color: white; 
+} 
+
+#best { 
+	background: #272829 !important; 
+} 
+
+p { 
+	font-size: 24px !important; 
+	margin-bottom: 10px; 
+	margin-top: -10px; 
+} 
+
+#prem { 
+	color: gold !important; 
+	text-shadow: 1px 1px gold; 
+}
+</style>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KCE</title>
+    <link
+      rel="icon"
+      href="https://kce.ac.in/new/wp-content/uploads/2022/12/logo-grade-kce-2.png"
+      type="image/icon type"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="header sticky">
+        <div>
+          <a href="home.html"
+            ><img
+              src="https://www.targetadmission.com/img/logos/1759891697.jpg"
+              class="logo"
+          /></a>
+        </div>
+        <div class="categories">
+          <ul>
+            <li class="dropdown-content1 dropdown-content">
+              <a href="Parallel.html">HOME</a>
+            </li>
+            <li class="dropdown-content2 dropdown-content">
+              <a href="Index.html">LOGIN</a>
+            </li>
+            <li class="dropdown-content3 dropdown-content">
+              <a href="">ABOUT</a>
+            </li>
+            <li class="dropdown-content4 dropdown-content">
+              <a href="">CONTACT</a>
+            </li>
+            <li class="dropdown-content5 dropdown-content">
+              <a href="">HELP</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Search Div -->
+        <div class="search-div">
+          <img
+            id="searchpng"
+            src="https://image.flaticon.com/icons/png/128/49/49116.png"
+            alt=""
+          />
+
+          <input
+            type="text"
+            placeholder="Search courses"
+          />
+        </div>
+
+        <div class="nav-last">
+          <div>
+            <a href="">
+              <img
+                id="svg"
+                src="https://www.svgrepo.com/show/198180/user-profile.svg"
+                alt=""
+              />
+            </a>
+
+            <div>Profile</div>
+          </div>
+          </div>
+      </div>
+      <div class="course">
+      <h2>COURSE DETAILS</h2> 
+		<div class="price-row"> 
+			<div class="price-col"> 
+				<p>COURSE</p> 
+				<hr> 
+				<h3><span>UG</span></h3> 
+				<ul> 
+                    <h3>B.E</h3>
+					<li>NO OF DEPARTMENTS</li> 
+					<li>GOOD TEACHING</li> 
+					<li>LABS ARE AVAILABLE</li> 
+					<li>100% PLACEMENT TRAINIG</li> 
+				</ul> 
+				<button>SEE COURSE</button> 
+			</div> 
+			<div class="price-col" id="best"> 
+				<p id="prem">COURSE</p> 
+				<hr> 
+				<h3><span>UG</span></h3> 
+				<ul> 
+					<h3>B.TECH</h3>
+					<li>ONE DEPARTMENT</li> 
+					<li>GOOD TEACHING</li> 
+					<li>LABS ARE AVAILABLE</li> 
+					<li>100% PLACEMENT TRAINIG</li> 
+				</ul> 
+				<button>SEE COURSE</button> 
+			</div> 
+			<div class="price-col"> 
+				<p>COURSE</p> 
+				<hr> 
+				<h3><span>PG</span></h3> 
+				<ul> 
+					<h3>MBA && MCA</h3>
+					<li>NO OF DEPARTMENT</li> 
+					<li>GOOD TEACHING</li> 
+					<li>LABS ARE AVAILABLE</li> 
+					<li>100% PLACEMENT TRAINIG</li>
+				</ul> 
+				<button>SEE COURSE</button> 
+			</div> 
+		</div> 
+	</div> 
+    </main>
+  </body>
+</html>
